@@ -1,0 +1,106 @@
+body {
+    background: linear-gradient(135deg, rgb(66, 0, 105) 0%, rgba(143,60,193,1) 50%, #c179ee 100%);
+    background-attachment: fixed;
+}
+
+main {
+    background: rgba(0, 0, 0,.1);
+}
+.container-fluid{ 
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.navbar {
+    box-shadow: 2px 2px 4px #420069;
+    .nav-item .nav-link {
+        color: white;
+        font-weight: 500;
+        &:hover {
+            color: #c179ee;
+            font-weight: 500;
+            width: max-content;
+        }        
+    }
+}
+
+.dropdown-item {
+    color:white
+}
+
+.bi:hover {
+    fill: #c179ee;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.carousel-caption {
+    background: rgba(128, 128, 128,.5);
+    padding: unset;
+}
+
+.tab-pane {
+    height: 230px;
+}
+
+footer span {
+    text-shadow: 1px 1px rgb(0, 0, 129);
+}
+
+@media (max-width: 1056px) {
+    h1 {font-size:large; }
+    img {width: 100%;}
+    .navbar-toggler {width: 100%;}
+    &-icon {width: 100%;}
+    .navbar-dark .navbar-brand {
+        margin-right: auto;}
+    body{
+        font-size: .9rem;
+        h1,h2,h3,h4,h5,h6 {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+svg.bi.bi-whatsapp {
+    animation-name: animacion1;
+    animation-duration: 1s;
+    position: relative;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+
+@keyframes animacion1 {
+    0%{
+        fill: #c179ee;
+        }
+    100% {
+        fill: white;
+         } 
+}
+
+.navbar-brand {
+    animation-name: animacion2;
+    animation-duration: 1s;
+    position: relative;
+    animation-timing-function: ease;
+    transform-origin: center;
+}
+
+.card-body{
+    background-color: rgb(66, 0, 105);
+}
+
+@keyframes animacion2 {
+    0% {top: -150px;}
+    100% {top: 0px;} }
+
+div#nav{
+    &-home,&-profile,&-contact {
+        overflow: auto;
+    }    
+}
